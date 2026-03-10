@@ -7,11 +7,11 @@
 <style>
 
 body{
+margin:0;
+font-family:Arial;
 background:#0f172a;
 color:white;
-font-family:Arial;
-margin:0;
-text-align:center;
+scroll-behavior:smooth;
 }
 
 /* barra superior */
@@ -31,7 +31,7 @@ z-index:1000;
 nav a{
 color:white;
 text-decoration:none;
-font-size:28px;
+font-size:26px;
 font-weight:bold;
 }
 
@@ -39,43 +39,45 @@ nav a:hover{
 color:red;
 }
 
-/* secciones */
+/* secciones separadas */
 
-section{
-padding:140px 20px;
+.section{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
-/* titulo principal */
+/* inicio */
 
-h1{
-font-size:90px;
-margin-bottom:10px;
+#inicio h1{
+font-size:100px;
+margin:0;
 }
 
-/* subtitulo */
-
-.sub{
+#inicio p{
 font-size:30px;
 }
 
-/* titulo fanarts */
+/* fanarts */
 
 .fanart-title{
-font-size:80px;
+font-size:90px;
 font-weight:bold;
 background:linear-gradient(90deg,#ff4d4d,#ffd93b,#4dff88,#4db8ff,#c84dff);
 -webkit-background-clip:text;
 color:transparent;
+margin-bottom:40px;
 }
-
-/* galeria */
 
 .galeria{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:30px;
-margin-top:40px;
+gap:25px;
 }
 
 .galeria img{
@@ -83,18 +85,17 @@ width:220px;
 border-radius:12px;
 }
 
-/* botones redes */
+/* redes */
 
 .redes{
 display:flex;
-justify-content:center;
 gap:40px;
-margin-top:30px;
+margin-top:20px;
 }
 
 .boton{
-padding:15px 35px;
-font-size:22px;
+padding:18px 40px;
+font-size:24px;
 border-radius:10px;
 border:2px solid white;
 cursor:pointer;
@@ -121,14 +122,14 @@ color:white;
 <a href="#redes">Redes</a>
 </nav>
 
-<section id="inicio">
+<section id="inicio" class="section">
 
 <h1>NeckBazz</h1>
-<p class="sub">Gracias por apoyar el canal</p>
+<p>Gracias por apoyar el canal</p>
 
 </section>
 
-<section id="fanart">
+<section id="fanart" class="section">
 
 <h2 class="fanart-title">FANARTS</h2>
 
@@ -142,9 +143,9 @@ color:white;
 
 </section>
 
-<section id="redes">
+<section id="redes" class="section">
 
-<h2 style="font-size:60px;">Redes</h2>
+<h2 style="font-size:70px;">Redes</h2>
 
 <div class="redes">
 
